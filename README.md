@@ -47,6 +47,14 @@
    - Add TLS/SSL support for encrypted communication.
    - Implement an email queuing system for delayed delivery.
    - Develop a web-based dashboard for monitoring server activity.
+  
+## Current Status
+
+- The server currently supports basic SMTP commands: HELO/EHLO, MAIL FROM, RCPT TO, DATA, and QUIT.
+- The server currently handles connections sequentially in a single-threaded manner. Multi-threading or event-driven concurrency is planned for future updates.
+- Basic input validation is in place. More advanced security features, including comprehensive error handling and potential TLS/SSL support, are being tried to implement.
+
+
 
 ## How to Build and Run
 
