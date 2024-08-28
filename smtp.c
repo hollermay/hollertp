@@ -74,3 +74,65 @@ int main() {
 
     return 0;
 }
+
+void handle_client(SOCKET client_socket) {
+    char buffer[BUFFER_SIZE];
+    int bytes_received;
+    char command[BUFFER_SIZE] = {0};  // Buffer to accumulate the command
+    int command_len = 0;
+    const char *greeting = "220 MySMTPServer Service Ready\r\n";
+    const char *ok_response = "250 OK\r\n";
+    const char *data_end_response = "354 End data with <CR><LF>.<CR><LF>\r\n";
+    const char *message_received = "250 Message accepted for delivery\r\n";
+    const char *bye_response = "221 Bye\r\n";
+
+    // Send greeting message
+    send_response(client_socket, greeting);
+
+    // Receive and handle data from client
+    while ((bytes_received = recv(client_socket, buffer, sizeof(buffer) - 1, 0)) > 0) {
+        buffer[bytes_received] = '\0'; // Null-terminate the received data
+
+        // Append received data to the command buffer
+        strncat(command, buffer, sizeof(command) - command_len - 1);
+        command_len += bytes_received;
+
+        // Check if we have a complete command
+        if (strstr(command, "\r\n") != NULL) {
+            printf("Received: %s", command);
+
+            if (strncmp(command, "HELO", 4) == 0 || strncmp(command, "EHLO", 4) == 0) {
+                send_response(client_socket, "250 Hello localhost, pleased to meet you\r\n");
+            } else if (strncmp(command, "MAIL FROM:", 11) == 0) {
+                send_response(client_socket, ok_response);
+            } else if (strncmp(command, "RCPT TO:", 9) == 0) {
+                send_response(client_socket, ok_response);
+            } else if (strncmp(command, "DATA", 4) == 0) {
+                send_response(client_socket, data_end_response);
+                // Handle message data
+                while ((bytes_received = recv(client_socket, buffer, sizeof(buffer) - 1, 0)) > 0) {
+                    buffer[bytes_received] = '\0';
+                    // Check for end of data
+                    if (strncmp(buffer, ".\r\n", 3) == 0) {
+                        send_response(client_socket, message_received);
+                        break;
+                    }
+                    printf("Message Data: %s", buffer);
+                }
+            } else if (strncmp(command, "QUIT", 4) == 0) {
+                send_response(client_socket, bye_response);
+                break;
+            } else {
+                send_response(client_socket, "502 Command not implemented\r\n");
+            }
+
+            // Reset command buffer
+            memset(command, 0, sizeof(command));
+            command_len = 0;
+        }
+    }
+
+    if (bytes_received == SOCKET_ERROR) {
+        printf("Receive failed: %d\n", WSAGetLastError());
+    }
+}
