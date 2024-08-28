@@ -136,3 +136,17 @@ void handle_client(SOCKET client_socket) {
         printf("Receive failed: %d\n", WSAGetLastError());
     }
 }
+
+void send_response(SOCKET client_socket, const char *response) {
+    int len = strlen(response);
+    int sent = 0;
+    while (sent < len) {
+        int result = send(client_socket, response + sent, len - sent, 0);
+        if (result == SOCKET_ERROR) {
+            printf("Send failed: %d\n", WSAGetLastError());
+            break;
+        }
+        sent += result;
+    }
+    printf("Sent: %s", response);
+}
