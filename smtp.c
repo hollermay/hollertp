@@ -86,6 +86,11 @@ void handle_client(SOCKET client_socket) {
     const char *message_received = "250 Message accepted for delivery\r\n";
     const char *bye_response = "221 Bye\r\n";
 
+    // Variables to store email details
+    char mail_from[BUFFER_SIZE] = {0};
+    char rcpt_to[BUFFER_SIZE] = {0};
+    char email_data[BUFFER_SIZE * 10] = {0};
+
     // Send greeting message
     send_response(client_socket, greeting);
 
@@ -101,14 +106,18 @@ void handle_client(SOCKET client_socket) {
         if (strstr(command, "\r\n") != NULL) {
             printf("Received: %s", command);
 
+            // Check for different SMTP commands
             if (strncmp(command, "HELO", 4) == 0 || strncmp(command, "EHLO", 4) == 0) {
                 send_response(client_socket, "250 Hello localhost, pleased to meet you\r\n");
             } else if (strncmp(command, "MAIL FROM:", 11) == 0) {
+                sscanf(command, "MAIL FROM:<%1023[^>]>%*s", mail_from);
                 send_response(client_socket, ok_response);
             } else if (strncmp(command, "RCPT TO:", 9) == 0) {
+                sscanf(command, "RCPT TO:<%1023[^>]>%*s", rcpt_to);
                 send_response(client_socket, ok_response);
             } else if (strncmp(command, "DATA", 4) == 0) {
                 send_response(client_socket, data_end_response);
+                int data_len = 0;
                 // Handle message data
                 while ((bytes_received = recv(client_socket, buffer, sizeof(buffer) - 1, 0)) > 0) {
                     buffer[bytes_received] = '\0';
@@ -117,8 +126,11 @@ void handle_client(SOCKET client_socket) {
                         send_response(client_socket, message_received);
                         break;
                     }
-                    printf("Message Data: %s", buffer);
+                    strncat(email_data, buffer, sizeof(email_data) - data_len - 1);
+                    data_len += bytes_received;
                 }
+                // Send the email after receiving the data
+                send_email(mail_from, rcpt_to, email_data);
             } else if (strncmp(command, "QUIT", 4) == 0) {
                 send_response(client_socket, bye_response);
                 break;
@@ -149,4 +161,11 @@ void send_response(SOCKET client_socket, const char *response) {
         sent += result;
     }
     printf("Sent: %s", response);
+}
+
+void send_email(const char *from, const char *to, const char *data) {
+    printf("Sending email...\n");
+    printf("From: %s\n", from);
+    printf("To: %s\n", to);
+    printf("Data: \n%s\n", data);
 }
