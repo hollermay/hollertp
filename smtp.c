@@ -9,6 +9,8 @@
 
 void handle_client(SOCKET client_socket);
 void send_response(SOCKET client_socket, const char *response);
+void send_email(const char *from, const char *to, const char *data);
+
 
 int main() {
     WSADATA wsaData;
@@ -169,3 +171,5 @@ void send_email(const char *from, const char *to, const char *data) {
     printf("To: %s\n", to);
     printf("Data: \n%s\n", data);
 }
+//keeping this command handy for the moment for compilation
+//gcc smtp.c -o smtp.exe -lws2_32
