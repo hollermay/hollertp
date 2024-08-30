@@ -9,7 +9,7 @@
 
 void handle_client(SOCKET client_socket);
 void send_response(SOCKET client_socket, const char *response);
-void send_email(const char *from, const char *to, const char *data);
+void send_email(SOCKET client_socket, const char *from, const char *to, const char *data);
 
 
 int main() {
@@ -124,7 +124,7 @@ void handle_client(SOCKET client_socket) {
                 while ((bytes_received = recv(client_socket, buffer, sizeof(buffer) - 1, 0)) > 0) {
                     buffer[bytes_received] = '\0';
                     // Check for end of data
-                    if (strncmp(buffer, ".\r\n", 3) == 0) {
+                    if (strncmp(buffer, ".", 1) == 0) {
                         send_response(client_socket, message_received);
                         break;
                     }
@@ -132,7 +132,7 @@ void handle_client(SOCKET client_socket) {
                     data_len += bytes_received;
                 }
                 // Send the email after receiving the data
-                send_email(mail_from, rcpt_to, email_data);
+                send_email(client_socket,mail_from, rcpt_to, email_data);
             } else if (strncmp(command, "QUIT", 4) == 0) {
                 send_response(client_socket, bye_response);
                 break;
@@ -165,11 +165,13 @@ void send_response(SOCKET client_socket, const char *response) {
     printf("Sent: %s", response);
 }
 
-void send_email(const char *from, const char *to, const char *data) {
-    printf("Sending email...\n");
-    printf("From: %s\n", from);
-    printf("To: %s\n", to);
-    printf("Data: \n%s\n", data);
+void send_email(SOCKET client_socket,const char *from, const char *to, const char *data) {
+
+    char response[BUFFER_SIZE * 2];
+    
+    snprintf(response, sizeof(response), "Sending email...\r\nFrom: %s\r\nTo: %s\nData:%s\r\n", from, to, data);
+    send_response(client_socket, response);
+
 }
 //keeping this command handy for the moment for compilation
 //gcc smtp.c -o smtp.exe -lws2_32
