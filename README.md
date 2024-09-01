@@ -19,6 +19,11 @@
 - **Security:** Basic input validation, error handling, and potential TLS/SSL support (optional).
 - **Supported Platforms:** Unix-based systems (Linux, macOS), with potential Windows support.
 
+## Prerequisites
+- **GCC Compiler:** Ensure that GCC is installed on your system.
+- **PowerShell:** Use PowerShell as an administrator to run some commands, particularly on Windows.
+- **Administrator Privileges:** Required to bind the server to port 25.
+
 ## Design
 
 ### Architecture
@@ -53,6 +58,8 @@
 - The server currently supports basic SMTP commands: HELO/EHLO, MAIL FROM, RCPT TO, DATA, and QUIT.
 - The server currently handles connections sequentially in a single-threaded manner. Multi-threading or event-driven concurrency is planned for future updates.
 - Basic input validation is in place. More advanced security features, including comprehensive error handling and potential TLS/SSL support, are being tried to implement.
+- This application is currently Windows supported as I crashed my linux 3 days ago for running a command that was intended to remove a file but... well.
+- 
 
 
 
@@ -64,15 +71,28 @@
    cd hollertp
 
 2. **Build the Project:**
+   To compile the SMTP server code, use GCC. Run this command in PowerShell with administrator privileges:
    ```bash
-   make
-
+   gcc smtp.c -o smtp.exe -lws2_32
+   ```
+   This command compiles the smtp.c file into an executable named smtp.exe.
+   
 3. **Run the SMTP Server:**
-   ```bash
-   ./hollertp
+   After building the project, run the server executable:
+   ``` bash
+   .\smtp
+   ```
+   Make sure to run this command as an administrator, as the server needs appropriate permissions to bind to *port 25*.
+   
 
-4. **Test the SMTP Server:**
-   - Use an email client or command-line tools like telnet or netcat to connect to the server and send emails.
+5. **Test the SMTP Server:**
+   You can test the server using an email client or command-line tools like telnet or netcat.
+   ``` bash
+   telnet localhost 25
+   ```
+   You can manually input SMTP commands like **HELO**, **MAIL FROM**, **RCPT TO**, **DATA**, and **QUIT** to interact with the server..
+
+     
 
 ## License
 
