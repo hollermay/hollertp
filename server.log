@@ -1,5 +1,175 @@
- [Mon Sep 02 02:42:41 2024] INFO: SMTP Server listening on port 25
+[Mon Sep 02 02:42:41 2024] INFO: SMTP Server listening on port 25
 [Mon Sep 02 02:43:07 2024] INFO: Connection accepted from client
 [Mon Sep 02 02:43:10 2024] INFO: Client greeted
 [Mon Sep 02 02:45:38 2024] INFO: Connection accepted from client
 [Mon Sep 02 02:45:41 2024] INFO: Client greeted
+[Mon Sep 02 14:40:46 2024] INFO: SMTP Server listening on port 25
+[Mon Sep 02 14:41:06 2024] INFO: Client greeted
+[Mon Sep 02 14:48:28 2024] INFO: H
+[Mon Sep 02 14:48:29 2024] INFO: E
+[Mon Sep 02 14:48:29 2024] INFO: L
+[Mon Sep 02 14:48:30 2024] INFO: O
+[Mon Sep 02 14:48:31 2024] INFO: 
+
+[Mon Sep 02 14:48:36 2024] INFO: M
+[Mon Sep 02 14:48:36 2024] INFO: A
+[Mon Sep 02 14:48:36 2024] INFO: I
+[Mon Sep 02 14:48:36 2024] INFO: L
+[Mon Sep 02 14:48:37 2024] INFO:  
+[Mon Sep 02 14:48:37 2024] INFO: F
+[Mon Sep 02 14:48:37 2024] INFO: R
+[Mon Sep 02 14:48:37 2024] INFO: O
+[Mon Sep 02 14:48:38 2024] INFO: M
+[Mon Sep 02 14:48:38 2024] INFO: :
+[Mon Sep 02 14:48:39 2024] INFO: <
+[Mon Sep 02 14:48:40 2024] INFO: u
+[Mon Sep 02 14:48:40 2024] INFO: @
+[Mon Sep 02 14:48:41 2024] INFO: g
+[Mon Sep 02 14:48:41 2024] INFO: m
+[Mon Sep 02 14:48:41 2024] INFO: a
+[Mon Sep 02 14:48:41 2024] INFO: i
+[Mon Sep 02 14:48:41 2024] INFO: l
+[Mon Sep 02 14:48:42 2024] INFO: ,
+[Mon Sep 02 14:48:42 2024] INFO: .
+[Mon Sep 02 14:48:43 2024] INFO: 
+[Mon Sep 02 14:48:43 2024] INFO: 
+[Mon Sep 02 14:48:44 2024] INFO: .
+[Mon Sep 02 14:48:44 2024] INFO: c
+[Mon Sep 02 14:48:44 2024] INFO: o
+[Mon Sep 02 14:48:45 2024] INFO: m
+[Mon Sep 02 14:48:45 2024] INFO: >
+[Mon Sep 02 14:48:46 2024] INFO: 
+
+[Mon Sep 02 14:48:46 2024] INFO: Sender email set
+[Mon Sep 02 14:48:47 2024] INFO: R
+[Mon Sep 02 14:48:48 2024] INFO: C
+[Mon Sep 02 14:48:50 2024] INFO: P
+[Mon Sep 02 14:48:50 2024] INFO: T
+[Mon Sep 02 14:48:50 2024] INFO:  
+[Mon Sep 02 14:48:51 2024] INFO: T
+[Mon Sep 02 14:48:51 2024] INFO: O
+[Mon Sep 02 14:48:52 2024] INFO: :
+[Mon Sep 02 14:48:53 2024] INFO: <
+[Mon Sep 02 14:48:54 2024] INFO: a
+[Mon Sep 02 14:48:55 2024] INFO: #
+[Mon Sep 02 14:48:57 2024] INFO: 
+[Mon Sep 02 14:48:57 2024] INFO: @
+[Mon Sep 02 14:48:58 2024] INFO: g
+[Mon Sep 02 14:48:58 2024] INFO: m
+[Mon Sep 02 14:48:58 2024] INFO: a
+[Mon Sep 02 14:48:58 2024] INFO: i
+[Mon Sep 02 14:48:59 2024] INFO: l
+[Mon Sep 02 14:48:59 2024] INFO: .
+[Mon Sep 02 14:48:59 2024] INFO: c
+[Mon Sep 02 14:48:59 2024] INFO: o
+[Mon Sep 02 14:49:00 2024] INFO: m
+[Mon Sep 02 14:49:00 2024] INFO: >
+[Mon Sep 02 14:49:01 2024] INFO: 
+
+[Mon Sep 02 14:49:01 2024] INFO: Recipient email set
+[Mon Sep 02 14:49:02 2024] INFO: D
+[Mon Sep 02 14:49:03 2024] INFO: A
+[Mon Sep 02 14:49:03 2024] INFO: T
+[Mon Sep 02 14:49:03 2024] INFO: A
+[Mon Sep 02 14:49:04 2024] INFO: 
+
+[Mon Sep 02 14:49:20 2024] INFO: Processing email data.
+[Mon Sep 02 15:08:37 2024] INFO: H
+[Mon Sep 02 15:08:37 2024] INFO: E
+[Mon Sep 02 15:08:37 2024] INFO: L
+[Mon Sep 02 15:08:38 2024] INFO: O
+[Mon Sep 02 15:08:38 2024] INFO: 
+
+[Mon Sep 02 15:08:39 2024] INFO: M
+[Mon Sep 02 15:08:39 2024] INFO: A
+[Mon Sep 02 15:08:39 2024] INFO: I
+[Mon Sep 02 15:08:39 2024] INFO: L
+[Mon Sep 02 15:08:40 2024] INFO:  
+[Mon Sep 02 15:08:40 2024] INFO: F
+[Mon Sep 02 15:08:40 2024] INFO: V
+[Mon Sep 02 15:08:41 2024] INFO: 
+[Mon Sep 02 15:08:41 2024] INFO: R
+[Mon Sep 02 15:08:42 2024] INFO: O
+[Mon Sep 02 15:08:42 2024] INFO: M
+[Mon Sep 02 15:08:43 2024] INFO: :
+[Mon Sep 02 15:08:43 2024] INFO: <
+[Mon Sep 02 15:08:44 2024] INFO: u
+[Mon Sep 02 15:08:44 2024] INFO: d
+[Mon Sep 02 15:08:44 2024] INFO: a
+[Mon Sep 02 15:08:45 2024] INFO: y
+[Mon Sep 02 15:08:45 2024] INFO: a
+[Mon Sep 02 15:08:45 2024] INFO: n
+[Mon Sep 02 15:08:45 2024] INFO: @
+[Mon Sep 02 15:08:45 2024] INFO: g
+[Mon Sep 02 15:08:45 2024] INFO: m
+[Mon Sep 02 15:08:46 2024] INFO: a
+[Mon Sep 02 15:08:46 2024] INFO: i
+[Mon Sep 02 15:08:46 2024] INFO: l
+[Mon Sep 02 15:08:46 2024] INFO: .
+[Mon Sep 02 15:08:46 2024] INFO: c
+[Mon Sep 02 15:08:47 2024] INFO: o
+[Mon Sep 02 15:08:47 2024] INFO: m
+[Mon Sep 02 15:08:47 2024] INFO: >
+[Mon Sep 02 15:08:48 2024] INFO: 
+
+[Mon Sep 02 15:08:50 2024] INFO: M
+[Mon Sep 02 15:08:50 2024] INFO: A
+[Mon Sep 02 15:08:50 2024] INFO: I
+[Mon Sep 02 15:08:51 2024] INFO: L
+[Mon Sep 02 15:08:51 2024] INFO:  
+[Mon Sep 02 15:08:51 2024] INFO: F
+[Mon Sep 02 15:08:51 2024] INFO: R
+[Mon Sep 02 15:08:52 2024] INFO: O
+[Mon Sep 02 15:08:52 2024] INFO: M
+[Mon Sep 02 15:08:53 2024] INFO: :
+[Mon Sep 02 15:08:53 2024] INFO: <
+[Mon Sep 02 15:08:54 2024] INFO: u
+[Mon Sep 02 15:08:55 2024] INFO: @
+[Mon Sep 02 15:08:55 2024] INFO: g
+[Mon Sep 02 15:08:55 2024] INFO: m
+[Mon Sep 02 15:08:55 2024] INFO: a
+[Mon Sep 02 15:08:55 2024] INFO: i
+[Mon Sep 02 15:08:56 2024] INFO: .
+[Mon Sep 02 15:08:57 2024] INFO: 
+[Mon Sep 02 15:08:57 2024] INFO: 
+[Mon Sep 02 15:08:58 2024] INFO: i
+[Mon Sep 02 15:08:58 2024] INFO: l
+[Mon Sep 02 15:08:59 2024] INFO: .
+[Mon Sep 02 15:08:59 2024] INFO: c
+[Mon Sep 02 15:08:59 2024] INFO: o
+[Mon Sep 02 15:08:59 2024] INFO: m
+[Mon Sep 02 15:09:01 2024] INFO: >
+[Mon Sep 02 15:09:01 2024] INFO: 
+
+[Mon Sep 02 15:09:01 2024] INFO: Sender email set
+[Mon Sep 02 15:09:04 2024] INFO: R
+[Mon Sep 02 15:09:04 2024] INFO: C
+[Mon Sep 02 15:09:04 2024] INFO: P
+[Mon Sep 02 15:09:05 2024] INFO: T
+[Mon Sep 02 15:09:05 2024] INFO:  
+[Mon Sep 02 15:09:05 2024] INFO: T
+[Mon Sep 02 15:09:06 2024] INFO: O
+[Mon Sep 02 15:09:06 2024] INFO: :
+[Mon Sep 02 15:09:08 2024] INFO: <
+[Mon Sep 02 15:09:08 2024] INFO: a
+[Mon Sep 02 15:09:09 2024] INFO: @
+[Mon Sep 02 15:09:09 2024] INFO: g
+[Mon Sep 02 15:09:09 2024] INFO: m
+[Mon Sep 02 15:09:09 2024] INFO: a
+[Mon Sep 02 15:09:09 2024] INFO: i
+[Mon Sep 02 15:09:10 2024] INFO: l
+[Mon Sep 02 15:09:10 2024] INFO: .
+[Mon Sep 02 15:09:10 2024] INFO: c
+[Mon Sep 02 15:09:10 2024] INFO: o
+[Mon Sep 02 15:09:10 2024] INFO: m
+[Mon Sep 02 15:09:11 2024] INFO: >
+[Mon Sep 02 15:09:12 2024] INFO: 
+
+[Mon Sep 02 15:09:12 2024] INFO: Recipient email set
+[Mon Sep 02 15:09:13 2024] INFO: D
+[Mon Sep 02 15:09:13 2024] INFO: A
+[Mon Sep 02 15:09:13 2024] INFO: T
+[Mon Sep 02 15:09:13 2024] INFO: A
+[Mon Sep 02 15:09:14 2024] INFO: 
+
+[Mon Sep 02 15:09:22 2024] INFO: Processing email data.

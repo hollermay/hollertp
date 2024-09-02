@@ -53,19 +53,16 @@ int main() {
     // Listen for connections
     if (listen(server_fd, SOMAXCONN) == SOCKET_ERROR) {
         printf("Listen failed: %d\n", WSAGetLastError());
-        log_message("ERROR", "Listen failed");
         closesocket(server_fd);
         WSACleanup();
         return 1;
     }
 
     printf("SMTP Server listening on port 25...\n");
-    log_message("INFO", "SMTP Server listening on port 25");
+
     // Accept and handle clients
     while ((client_socket = accept(server_fd, (struct sockaddr *)&address, &addrlen)) != INVALID_SOCKET) {
         printf("Connection accepted from client...\n");
-        log_message("INFO", "Connection accepted from client");
-         
         handle_client(client_socket);
         closesocket(client_socket);
     }
@@ -97,7 +94,7 @@ void handle_client(SOCKET client_socket) {
     // Variables to store email details
     char mail_from[BUFFER_SIZE] = {0};
     char rcpt_to[BUFFER_SIZE] = {0};
-    char email_data[BUFFER_SIZE * 10] = {0};
+    char email_data[BUFFER_SIZE * 10] = {0};  // Buffer for storing the email content
 
     // Send greeting message
     send_response(client_socket, greeting);
@@ -106,6 +103,7 @@ void handle_client(SOCKET client_socket) {
     while ((bytes_received = recv(client_socket, buffer, sizeof(buffer) - 1, 0)) > 0) {
         buffer[bytes_received] = '\0'; // Null-terminate the received data
 
+        log_message("INFO", buffer);
         // Append received data to the command buffer
         strncat(command, buffer, sizeof(command) - command_len - 1);
         command_len += bytes_received;
@@ -117,25 +115,23 @@ void handle_client(SOCKET client_socket) {
             // Check for different SMTP commands
             if (strncmp(command, "HELO", 4) == 0 || strncmp(command, "EHLO", 4) == 0) {
                 send_response(client_socket, "250 Hello localhost, pleased to meet you\r\n");
-                log_message("INFO", "Client greeted");
-            } else if (strncmp(command, "MAIL FROM:", 11) == 0) {
+            } else if (strncmp(command, "MAIL FROM:", 10) == 0) {
                 sscanf(command, "MAIL FROM:<%1023[^>]>%*s", mail_from);
                 send_response(client_socket, ok_response);
                 log_message("INFO", "Sender email set");
-            } else if (strncmp(command, "RCPT TO:", 9) == 0) {
+            } else if (strncmp(command, "RCPT TO:", 8) == 0) {
                 sscanf(command, "RCPT TO:<%1023[^>]>%*s", rcpt_to);
                 send_response(client_socket, ok_response);
                 log_message("INFO", "Recipient email set");
             } else if (strncmp(command, "DATA", 4) == 0) {
                 send_response(client_socket, data_end_response);
                 int data_len = 0;
-                log_message("INFO", "Receiving email data");
                 // Handle message data
+
                 while ((bytes_received = recv(client_socket, buffer, sizeof(buffer) - 1, 0)) > 0) {
                     buffer[bytes_received] = '\0';
                     // Check for end of data
                     if (strncmp(buffer, ".", 1) == 0) {
-                        log_message("INFO", "End of email data");
                         send_response(client_socket, message_received);
                         break;
                     }
@@ -163,6 +159,7 @@ void handle_client(SOCKET client_socket) {
     }
 }
 
+
 void send_response(SOCKET client_socket, const char *response) {
     int len = strlen(response);
     int sent = 0;
@@ -177,13 +174,17 @@ void send_response(SOCKET client_socket, const char *response) {
     printf("Sent: %s", response);
 }
 
-void send_email(SOCKET client_socket,const char *from, const char *to, const char *data) {
+void send_email(SOCKET client_socket, const char *from, const char *to, const char *data) {
+    char response[BUFFER_SIZE * 2]; 
 
-    char response[BUFFER_SIZE * 2];
-    
-    snprintf(response, sizeof(response), "Sending email...\r\nFrom: %s\r\nTo: %s\nData:%s\r\n", from, to, data);
+    // Constructing the response message
+    snprintf(response, sizeof(response), 
+             "Sending email...\nFrom: %s\nTo: %s\nData: \n%s\n", 
+             from, to, data);
+
     send_response(client_socket, response);
 
+    printf("%s", response);
 }
 
 void log_message(const char *log_level, const char *message) {
@@ -202,5 +203,5 @@ void log_message(const char *log_level, const char *message) {
     fclose(log_file);
 }
 
-//keeping this command handy for the moment for compilation
+//keeping this command handy for the compilation
 //gcc smtp.c -o smtp.exe -lws2_32
