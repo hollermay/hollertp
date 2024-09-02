@@ -59,7 +59,7 @@
 - The server currently handles connections sequentially in a single-threaded manner. Multi-threading or event-driven concurrency is planned for future updates.
 - Basic input validation is in place. More advanced security features, including comprehensive error handling and potential TLS/SSL support, are being tried to implement.
 - This application is currently Windows supported as I crashed my linux 3 days ago for running a command that was intended to remove a file but... well.
-- 
+- This now logs every single command with the date and time and records all transfers of mails.
 
 
 
