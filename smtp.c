@@ -143,9 +143,11 @@ void handle_client(SOCKET client_socket) {
                 send_email(client_socket,mail_from, rcpt_to, email_data);
             } else if (strncmp(command, "QUIT", 4) == 0) {
                 send_response(client_socket, bye_response);
+                log_message("INFO", "Client disconnected");
                 break;
             } else {
                 send_response(client_socket, "502 Command not implemented\r\n");
+                log_message("ERROR", "Command not implemented");
             }
 
             // Reset command buffer
@@ -179,7 +181,7 @@ void send_email(SOCKET client_socket, const char *from, const char *to, const ch
 
     // Constructing the response message
     snprintf(response, sizeof(response), 
-             "Sending email...\nFrom: %s\nTo: %s\nData: \n%s\n", 
+             "Sending email...\r\nFrom: %s\r\nTo: %s\r\nData: \r\n%s\r\n", 
              from, to, data);
 
     send_response(client_socket, response);
