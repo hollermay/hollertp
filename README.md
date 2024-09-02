@@ -2,7 +2,7 @@
 
 ## Project Description
 
-**hollertp** is an SMTP (Simple Mail Transfer Protocol) mail service implemented in C. The project aims to provide a lightweight, efficient, and fully functional SMTP server that can handle basic email sending operations. Designed to be fast and secure, hollertp serves as a fundamental tool for understanding the core principles of email transmission over the internet.
+**HollerTP** is an SMTP (Simple Mail Transfer Protocol) mail service implemented in C. The project aims to provide a lightweight, efficient, and fully functional SMTP server that can handle basic email sending operations. Designed to be fast and secure, hollertp serves as a fundamental tool for understanding the core principles of email transmission over the internet.
 
 ## Goals
 
