@@ -151,7 +151,9 @@ void handle_client(SOCKET client_socket) {
             }
 
             // Reset command buffer
-            memset(command, 0, sizeof(command));
+            for (int i = 0; i < sizeof(command); i++) {
+                command[i] = '\0';
+            }
             command_len = 0;
         }
     }
