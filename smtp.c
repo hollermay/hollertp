@@ -2,7 +2,7 @@
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <string.h>
-#include <time.h>
+#include"loglib.h"
 #pragma comment(lib, "Ws2_32.lib")
 
 #define BUFFER_SIZE 1024
@@ -192,21 +192,6 @@ void send_email(SOCKET client_socket, const char *from, const char *to, const ch
     printf("%s", response);
 }
 
-void log_message(const char *log_level, const char *message) {
-    FILE *log_file = fopen("server.log", "a");
-    if (log_file == NULL) {
-        printf("Error opening log file!\n");
-        return;
-    }
-
-    time_t now;
-    time(&now);
-    char *time_str = ctime(&now);
-    time_str[strlen(time_str) - 1] = '\0';  // Remove newline character
-
-    fprintf(log_file, "[%s] %s: %s\n", time_str, log_level, message);
-    fclose(log_file);
-}
 
 //keeping this command handy for the compilation
-//gcc smtp.c -o smtp.exe -lws2_32
+//gcc smtp.c loglib.c -o smtp.exe -lws2_32
