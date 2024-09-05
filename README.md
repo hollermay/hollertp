@@ -52,7 +52,7 @@
    - Add TLS/SSL support for encrypted communication.
    - Implement an email queuing system for delayed delivery.
    - Develop a web-based dashboard for monitoring server activity.
-  
+   
 ## Current Status
 
 - The server currently supports basic SMTP commands: HELO/EHLO, MAIL FROM, RCPT TO, DATA, and QUIT.
@@ -101,4 +101,10 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 ## Contributions
 
 Contributions are welcome! Feel free to fork the repository, create a branch, and submit a pull request.
+
+## References
+Below are the references I used while building the project.
+
+https://blog.thelifeofkenneth.com/2012/06/minimalist-c-smtp-mail-server.html
+https://www.cloudflare.com/learning/email-security/what-is-smtp/
 
