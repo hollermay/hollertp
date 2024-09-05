@@ -115,6 +115,7 @@ void handle_client(SOCKET client_socket) {
             // Check for different SMTP commands
             if (strncmp(command, "HELO", 4) == 0 || strncmp(command, "EHLO", 4) == 0) {
                 send_response(client_socket, "250 Hello localhost, pleased to meet you\r\n");
+                log_message("INFO", "Client greeted");
             } else if (strncmp(command, "MAIL FROM:", 10) == 0) {
                 sscanf(command, "MAIL FROM:<%1023[^>]>%*s", mail_from);
                 send_response(client_socket, ok_response);
