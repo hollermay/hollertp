@@ -52,7 +52,7 @@
    - Add TLS/SSL support for encrypted communication.
    - Implement an email queuing system for delayed delivery.
    - Develop a web-based dashboard for monitoring server activity.
-  
+   
 ## Current Status
 
 - The server currently supports basic SMTP commands: HELO/EHLO, MAIL FROM, RCPT TO, DATA, and QUIT.
@@ -60,6 +60,7 @@
 - Basic input validation is in place. More advanced security features, including comprehensive error handling and potential TLS/SSL support, are being tried to implement.
 - This application is currently Windows supported as I crashed my linux 3 days ago for running a command that was intended to remove a file but... well.
 - This now logs every single command with the date and time and records all transfers of mails.
+- This is only a simulator that simulates how an SMTP server works.
 
 
 
@@ -83,6 +84,7 @@
    .\smtp
    ```
    Make sure to run this command as an administrator, as the server needs appropriate permissions to bind to *port 25*.
+   *NOTE:If this doesn't work reveal the executable file in explorer then run it as administrator.*
    
 
 5. **Test the SMTP Server:**
@@ -101,4 +103,10 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 ## Contributions
 
 Contributions are welcome! Feel free to fork the repository, create a branch, and submit a pull request.
+
+## References
+Below are the references I used while building the project.
+
+https://blog.thelifeofkenneth.com/2012/06/minimalist-c-smtp-mail-server.html
+https://www.cloudflare.com/learning/email-security/what-is-smtp/
 
