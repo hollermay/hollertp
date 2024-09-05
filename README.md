@@ -60,6 +60,7 @@
 - Basic input validation is in place. More advanced security features, including comprehensive error handling and potential TLS/SSL support, are being tried to implement.
 - This application is currently Windows supported as I crashed my linux 3 days ago for running a command that was intended to remove a file but... well.
 - This now logs every single command with the date and time and records all transfers of mails.
+- This is only a simulator that simulates how an SMTP server works.
 
 
 
@@ -83,6 +84,7 @@
    .\smtp
    ```
    Make sure to run this command as an administrator, as the server needs appropriate permissions to bind to *port 25*.
+   *NOTE:If this doesn't work reveal the executable file in explorer then run it as administrator.*
    
 
 5. **Test the SMTP Server:**
