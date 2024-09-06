@@ -74,7 +74,7 @@
 2. **Build the Project:**
    To compile the SMTP server code, use GCC. Run this command in PowerShell with administrator privileges:
    ```bash
-   gcc smtp.c -o smtp.exe -lws2_32
+   gcc smtp.c loglib.c -o smtp.exe -lws2_32
    ```
    This command compiles the smtp.c file into an executable named smtp.exe.
    
