@@ -10,7 +10,6 @@
 void handle_client(SOCKET client_socket);
 void send_response(SOCKET client_socket, const char *response);
 void send_email(SOCKET client_socket, const char *from, const char *to, const char *data);
-void log_message(const char *log_level, const char *message);
 
 int main() {
     WSADATA wsaData;
