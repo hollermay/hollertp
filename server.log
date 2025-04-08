@@ -2,7 +2,8 @@
 [Wed Sep 04 12:00:49 2024] INFO: E
 [Wed Sep 04 12:00:49 2024] INFO: L
 [Wed Sep 04 12:00:49 2024] INFO: O
-[Wed Sep 04 12:00:50 2024] INFO: 
+[Wed Sep 04 12:00:50 2024] INFO: 
+
 
 [Wed Sep 04 12:01:03 2024] INFO: M
 [Wed Sep 04 12:01:04 2024] INFO: A
@@ -26,7 +27,8 @@
 [Wed Sep 04 12:01:09 2024] INFO: o
 [Wed Sep 04 12:01:09 2024] INFO: m
 [Wed Sep 04 12:01:09 2024] INFO: >
-[Wed Sep 04 12:01:10 2024] INFO: 
+[Wed Sep 04 12:01:10 2024] INFO: 
+
 
 [Wed Sep 04 12:01:10 2024] INFO: Sender email set
 [Wed Sep 04 12:01:11 2024] INFO: R
@@ -50,14 +52,16 @@
 [Wed Sep 04 12:01:17 2024] INFO: o
 [Wed Sep 04 12:01:17 2024] INFO: m
 [Wed Sep 04 12:01:17 2024] INFO: >
-[Wed Sep 04 12:01:18 2024] INFO: 
+[Wed Sep 04 12:01:18 2024] INFO: 
+
 
 [Wed Sep 04 12:01:18 2024] INFO: Recipient email set
 [Wed Sep 04 12:01:19 2024] INFO: D
 [Wed Sep 04 12:01:19 2024] INFO: A
 [Wed Sep 04 12:01:21 2024] INFO: T
 [Wed Sep 04 12:01:21 2024] INFO: A
-[Wed Sep 04 12:01:25 2024] INFO: 
+[Wed Sep 04 12:01:25 2024] INFO: 
+
 
 [Wed Sep 04 12:01:33 2024] INFO: Processing email data.
 [Wed Sep 04 12:01:36 2024] INFO: F
@@ -82,25 +86,29 @@
 [Wed Sep 04 12:01:41 2024] INFO: n
 [Wed Sep 04 12:01:41 2024] INFO: d
 [Wed Sep 04 12:01:42 2024] INFO: !
-[Wed Sep 04 12:01:43 2024] INFO: 
+[Wed Sep 04 12:01:43 2024] INFO: 
+
 
 [Wed Sep 04 12:01:43 2024] ERROR: Command not implemented
 [Wed Sep 04 12:01:44 2024] INFO: .
-[Wed Sep 04 12:01:45 2024] INFO: 
+[Wed Sep 04 12:01:45 2024] INFO: 
+
 
 [Wed Sep 04 12:01:45 2024] ERROR: Command not implemented
 [Wed Sep 04 12:01:46 2024] INFO: D
 [Wed Sep 04 12:01:46 2024] INFO: A
 [Wed Sep 04 12:01:46 2024] INFO: T
 [Wed Sep 04 12:01:46 2024] INFO: A
-[Wed Sep 04 12:01:57 2024] INFO: 
+[Wed Sep 04 12:01:57 2024] INFO: 
+
 
 [Wed Sep 04 12:02:04 2024] INFO: Processing email data.
 [Wed Sep 04 12:02:23 2024] INFO: D
 [Wed Sep 04 12:02:23 2024] INFO: A
 [Wed Sep 04 12:02:23 2024] INFO: T
 [Wed Sep 04 12:02:23 2024] INFO: A
-[Wed Sep 04 12:02:24 2024] INFO: 
+[Wed Sep 04 12:02:24 2024] INFO: 
+
 
 [Wed Sep 04 12:02:26 2024] INFO: Processing email data.
 [Wed Sep 04 12:02:29 2024] INFO: M
@@ -125,7 +133,8 @@
 [Wed Sep 04 12:02:38 2024] INFO: o
 [Wed Sep 04 12:02:38 2024] INFO: m
 [Wed Sep 04 12:02:38 2024] INFO: >
-[Wed Sep 04 12:04:17 2024] INFO: 
+[Wed Sep 04 12:04:17 2024] INFO: 
+
 
 [Wed Sep 04 12:04:17 2024] INFO: Sender email set
 [Wed Sep 04 12:04:19 2024] INFO: R
@@ -136,7 +145,8 @@
 [Wed Sep 04 12:04:22 2024] INFO: A
 [Wed Sep 04 12:04:23 2024] INFO: T
 [Wed Sep 04 12:04:24 2024] INFO: A
-[Wed Sep 04 12:04:25 2024] INFO: 
+[Wed Sep 04 12:04:25 2024] INFO: 
+
 
 [Wed Sep 04 12:04:25 2024] ERROR: Command not implemented
 [Wed Sep 04 12:04:27 2024] INFO: R
@@ -159,25 +169,29 @@
 [Wed Sep 04 12:04:38 2024] INFO: o
 [Wed Sep 04 12:04:39 2024] INFO: m
 [Wed Sep 04 12:04:39 2024] INFO: >
-[Wed Sep 04 12:04:42 2024] INFO: 
+[Wed Sep 04 12:04:42 2024] INFO: 
+
 
 [Wed Sep 04 12:04:42 2024] INFO: Recipient email set
 [Wed Sep 04 12:04:43 2024] INFO: d
 [Wed Sep 04 12:04:44 2024] INFO: a
 [Wed Sep 04 12:04:44 2024] INFO: t
 [Wed Sep 04 12:04:45 2024] INFO: a
-[Wed Sep 04 12:04:45 2024] INFO: 
+[Wed Sep 04 12:04:45 2024] INFO: 
+
 
 [Wed Sep 04 12:04:45 2024] ERROR: Command not implemented
 [Wed Sep 04 12:04:46 2024] INFO: D
 [Wed Sep 04 12:04:47 2024] INFO: A
 [Wed Sep 04 12:04:47 2024] INFO: T
 [Wed Sep 04 12:04:47 2024] INFO: A
-[Wed Sep 04 12:04:48 2024] INFO: 
+[Wed Sep 04 12:04:48 2024] INFO: 
+
 
 [Wed Sep 04 12:04:53 2024] INFO: Processing email data.
 [Wed Sep 04 12:08:02 2024] INFO: .
-[Wed Sep 04 12:08:03 2024] INFO: 
+[Wed Sep 04 12:08:03 2024] INFO: 
+
 
 [Wed Sep 04 12:08:03 2024] ERROR: Command not implemented
 [Wed Sep 04 12:08:07 2024] INFO: q
@@ -188,17 +202,20 @@
 [Wed Sep 04 12:08:10 2024] INFO: U
 [Wed Sep 04 12:08:11 2024] INFO: I
 [Wed Sep 04 12:08:11 2024] INFO: T
-[Wed Sep 04 12:08:12 2024] INFO: 
+[Wed Sep 04 12:08:12 2024] INFO: 
+
 
 [Wed Sep 04 12:08:12 2024] ERROR: Command not implemented
-[Wed Sep 04 12:08:17 2024] INFO: 
+[Wed Sep 04 12:08:17 2024] INFO: 
+
 
 [Wed Sep 04 12:08:17 2024] ERROR: Command not implemented
 [Wed Sep 04 12:08:19 2024] INFO: e
 [Wed Sep 04 12:08:19 2024] INFO: h
 [Wed Sep 04 12:08:20 2024] INFO: l
 [Wed Sep 04 12:08:21 2024] INFO: o
-[Wed Sep 04 12:08:22 2024] INFO: 
+[Wed Sep 04 12:08:22 2024] INFO: 
+
 
 [Wed Sep 04 12:08:22 2024] ERROR: Command not implemented
 [Wed Sep 04 12:08:23 2024] INFO: e
@@ -207,14 +224,16 @@
 [Wed Sep 04 12:08:26 2024] INFO: H
 [Wed Sep 04 12:08:27 2024] INFO: L
 [Wed Sep 04 12:08:27 2024] INFO: O
-[Wed Sep 04 12:08:27 2024] INFO: 
+[Wed Sep 04 12:08:27 2024] INFO: 
+
 
 [Wed Sep 04 12:08:27 2024] ERROR: Command not implemented
 [Wed Sep 04 12:08:29 2024] INFO: H
 [Wed Sep 04 12:08:29 2024] INFO: E
 [Wed Sep 04 12:08:29 2024] INFO: L
 [Wed Sep 04 12:08:29 2024] INFO: O
-[Wed Sep 04 12:08:30 2024] INFO: 
+[Wed Sep 04 12:08:30 2024] INFO: 
+
 
 [Wed Sep 04 12:08:31 2024] INFO: q
 [Wed Sep 04 12:08:32 2024] INFO: U
@@ -226,22 +245,144 @@
 [Wed Sep 04 12:08:35 2024] INFO: T
 [Wed Sep 04 12:08:35 2024] INFO: Y
 [Wed Sep 04 12:08:36 2024] INFO: 
-[Wed Sep 04 12:08:36 2024] INFO: 
+[Wed Sep 04 12:08:36 2024] INFO: 
+
 
 [Wed Sep 04 12:08:36 2024] ERROR: Command not implemented
 [Wed Sep 04 12:08:37 2024] INFO: Q
 [Wed Sep 04 12:08:38 2024] INFO: U
 [Wed Sep 04 12:08:38 2024] INFO: I
 [Wed Sep 04 12:08:39 2024] INFO: T
-[Wed Sep 04 12:08:40 2024] INFO: 
+[Wed Sep 04 12:08:40 2024] INFO: 
+
 
 [Wed Sep 04 12:08:40 2024] INFO: Client disconnected
 [] INFO: H
 [] INFO: E
 [] INFO: L
 [] INFO: O
-[] INFO: 
+[] INFO: 
+
 
 [] INFO: Client greeted
 [] INFO: 
 [] INFO: 
+
+[] INFO: SMTP Server started and listening on port 25
+[k@à] INFO: Connection accepted from 127.0.0.1
+[k@”ð] INFO: EHLO
+
+[] INFO: Client greeted
+[k@”ð] INFO: MAIL FROM
+
+[] ERROR: Unrecognized command
+[k@”ð] INFO: MAIL FROM
+
+[] ERROR: Unrecognized command
+[k@”ð] INFO: MAIL_FROM
+
+[] ERROR: Unrecognized command
+[k@”ð] INFO: FROM
+
+[] ERROR: Unrecognized command
+[k@”ð] INFO: RCTPPT TO
+
+[] ERROR: Unrecognized command
+[k@”ð] INFO: MAIL FROM:
+
+[] ERROR: Invalid MAIL FROM format
+[k@”ð] INFO: JFEF
+
+[] ERROR: Unrecognized command
+[k@”ð] INFO: HELO
+
+[] INFO: Client greeted
+[k@”ð] INFO: UINFO
+
+[] ERROR: Unrecognized command
+[k@”ð] INFO: QUIT
+
+[] INFO: Client disconnected
+[k@à] INFO: Connection accepted from 127.0.0.1
+[k@”ð] INFO: EHLO
+
+[] INFO: Client greeted
+[k@”ð] INFO: MAIL_FROM
+
+[] ERROR: Unrecognized command
+[k@”ð] INFO: MAIL FROM: UDAYAN udyana@mail.com
+
+[] ERROR: Invalid MAIL FROM format
+[k@”ð] INFO: mailMAIL FROM: USAY@MFJF/COM
+
+[] ERROR: Unrecognized command
+[k@”ð] INFO: QIUIT
+
+[] ERROR: Unrecognized command
+[] INFO: SMTP Server started and listening on port 25
+[] INFO: Connection accepted from 127.0.0.1
+[] INFO: HEKLO
+[] ERROR: Unrecognized command
+[] INFO: HELO
+[] INFO: Client greeted
+[] INFO: MAIL FROM
+[] INFO: Sender email set: MAIL FROM
+[] INFO: udayan@mail.com
+[] ERROR: Unrecognized command
+[] INFO: RCPT TO hollerm@mail.com
+[] INFO: Recipient email set: RCPT TO hollerm@mail.com
+[] INFO: DATA
+[] INFO: Receiving email data
+[] ERROR: Data reception error
+[] INFO: Connection accepted from 127.0.0.1
+[] INFO: [AHELO
+[] ERROR: Unrecognized command
+[] INFO: EHLO
+[] INFO: Client greeted
+[] INFO: MAIL FROM: UDAYAN@GMAIL.COM
+[] INFO: Sender email set: UDAYAN@GMAIL.COM
+[] INFO: RCPT TO: HOLLER@GG.COM
+[] INFO: Recipient email set: HOLLER@GG.COM
+[] INFO: DATA
+[] INFO: Receiving email data
+[] INFO: SMTP Server started and listening on port 25
+[Gsà] INFO: Connection accepted from 127.0.0.1
+[Gsˆð] INFO: ehlo
+[] INFO: Client greeted
+[Gsˆð] INFO: mail from udayan@gmail.com
+[] INFO: Sender email set: mail from udayan@gmail.com
+[Gsˆð] INFO: rcpt to fff.#@ff.com
+[] INFO: Recipient email set: rcpt to fff.#@ff.com
+[Gsˆð] INFO: data
+[] INFO: Receiving email data
+[] INFO: Processing email data
+[] INFO: Sending email from: mail from udayan@gmail.com to: rcpt to fff.#@ff.com
+[] INFO: Email content processed successfully
+[Gsˆð] INFO: help
+[] INFO: HELP command received
+[Gsˆð] INFO: hddlnopp
+[] ERROR: Unrecognized command
+[Gsˆð] INFO: noop
+[] INFO: NOOP command received
+[Gsˆð] INFO: rset
+[] INFO: Mail transaction reset
+[Gsˆð] INFO: ehlo
+[] INFO: Client greeted
+[Gsˆð] INFO: quit
+[] INFO: Client disconnected
+[] INFO: SMTP Server started and listening on port 25
+[t<à] INFO: Connection accepted from 127.0.0.1
+[] INFO: SMTP Server started and listening on port 25
+[‚à] INFO: Connection accepted from 127.0.0.1
+[] INFO: SMTP Server started and listening on port 25
+[Dà] INFO: Connection accepted from 127.0.0.1
+[] INFO: SMTP Server started and listening on port 25
+[Š¯à] INFO: Connection accepted from 127.0.0.1
+[Š¯à] INFO: Connection accepted from 127.0.0.1
+[] INFO: SMTP Server started and listening on port 25
+[L’à] INFO: Connection accepted from 127.0.0.1
+[] INFO: SMTP Server started and listening on port 25
+[,Cà] INFO: Connection accepted from 127.0.0.1
+[] INFO: SMTP Server started and listening on port 25
+[] INFO: SMTP Server started and listening on port 25
+[0²à] INFO: Connection accepted from 127.0.0.1
