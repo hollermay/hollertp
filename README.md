@@ -52,6 +52,16 @@
    - Add TLS/SSL support for encrypted communication.
    - Implement an email queuing system for delayed delivery.
    - Develop a web-based dashboard for monitoring server activity.
+
+## Features
+- Full support for standard SMTP commands (HELO/EHLO, MAIL FROM, RCPT TO, DATA, QUIT)
+- Extended command support including RSET, NOOP, and HELP
+- Enhanced security with buffer overflow protection and input validation
+- Improved error handling with graceful termination
+- Client timeout handling to prevent hanging connections
+- Comprehensive logging of all commands with timestamps
+- Flexible email format parsing (with or without angle brackets)
+- Socket reuse to prevent "address already in use" errors
    
 ## Current Status
 
@@ -93,6 +103,21 @@
    telnet localhost 25
    ```
    You can manually input SMTP commands like **HELO**, **MAIL FROM**, **RCPT TO**, **DATA**, and **QUIT** to interact with the server..
+
+## How to Use
+After connecting to the server using telnet:
+
+1. Start with `HELO yourdomain.com`
+2. Specify sender with `MAIL FROM:<sender@example.com>`
+3. Specify recipient with `RCPT TO:<recipient@example.com>`
+4. Enter `DATA` to begin the email content
+5. Type your email content (multiple lines)
+6. End the email by typing a period (.) on a line by itself
+7. Type `QUIT` to close the connection
+
+Commands are case-insensitive and email addresses can be specified with or without angle brackets.
+
+For help with available commands, type `HELP` during your session.
 
      
 
