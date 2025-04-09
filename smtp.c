@@ -214,7 +214,7 @@ void handle_client(SOCKET client_socket) {
     "*                                                                               *\r\n"
     "*********************************************************************************\r\n"
     "*                                                                               *\r\n"
-    "*       HOLLERTP MAIL SYSTEM V0.1.0 - ALPHA RELEASE - AUGUST 2024               *\r\n"
+    "*         HOLLERTP MAIL SYSTEM V0.1.0 - ALPHA RELEASE - APRIL 2025               *\r\n"
     "*  CURRENTLY SUPPORTED ON WINDOWS(WE BLEW UP THE LINUX A FEW DAYS AGO)          *\r\n"
     "* CLASSIC MAIL DELIVERY SERVICE OVER TCP/IP - TELNET COMPATIBLE                 *\r\n"
     "* BATCH PROCESSING OF UP TO 64K MESSAGES - REQUIRES 16KB FREE MEMORY            *\r\n"
